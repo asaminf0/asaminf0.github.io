@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!--  
+		Author: Atefeh
+		Date:1/31/20
+	-->
+	<meta charset="utf-8"/>
+	<meta name="keywords" content="atefeh profile" />
+	<title>Web110-01 - Atefeh </title>
+	<link href="styles/default.css" rel="stylesheet"/> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One|Shrikhand|Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="styles/jtc_base.css" rel="stylesheet"/>
+    <link href="styles/jtc_layout.css" rel="stylesheet"/>
+</head>
+<body>
+<header>  
+      <nav>
+        <ul>
+          <li> <a href="http://students.cpcc.edu/~asaminf0/web110/contract.html"> Contract </a></li>
+          <li> <a href="http://students.cpcc.edu/~asaminf0/web110/template.html"> Template </a></li>
+        </ul>
+      </nav>
+
+    </header>
+<main>
+<h2 style="text-align:center">Slideshow Gallery</h2>
+<figure class="c">
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/biltmore1.jpg" style="width:100%" alt="biltmore garden">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/biltmore2.jpg" style="width:100%" alt="biltmore garden">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/biltmore3.jpg" style="width:100%" alt="biltmore garden">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/biltmore4.jpg" style="width:100%" alt="biltmore garden">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/biltmore5.jpg" style="width:100%" alt="biltmore garden">
+  </div>
+   
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/biltmore6.jpg" style="width:100%" alt="biltmore garden">
+  </div>
+   
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+ 
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/biltmore1.jpg" style="width:0%" onclick="currentSlide(1)" alt="Amazing Reflection">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/biltmore2.jpg" style="width:0%" onclick="currentSlide(2)" alt="Horses Farm">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/biltmore3.jpg" style="width:0%" onclick="currentSlide(3)" alt="Nature and sunset">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/biltmore4.jpg" style="width:0%" onclick="currentSlide(4)" alt="Castle Garden">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/biltmore5.jpg" style="width:0%" onclick="currentSlide(5)" alt="Cstle Jungle">
+    </div>    
+ <div class="column">
+      <img class="demo cursor" src="images/biltmore6.jpg" style="width:0%" onclick="currentSlide(6)" alt="Castle">
+    </div> 
+  </div>
+</div>
+</figure>
+ 
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+ 
+</main>
+<footer>
+		Signed:<a href="http://students.cpcc.edu/~asaminf0/web110/introduction.html">Atefh Saminfar</a> , Feb 7, 2020
+		<br/>
+		<br/>
+		<nav>
+			&hearts;<a href="http://students.cpcc.edu/~asaminf0/web110">CP Webspace</a>&nbsp;&nbsp;&nbsp;
+			&hearts;<a href="https://github.com/asaminf0">Github</a>&nbsp;&nbsp;&nbsp;
+			&hearts;<a href="http://students.cpcc.edu/~asaminf0/web110/introduction.html">Github Pages</a>&nbsp;&nbsp;&nbsp;
+			&hearts;<a href="https://www.khanacademy.org/profile/asaminf0/courses">Khan Academy</a>&nbsp;&nbsp;&nbsp;
+			&hearts;<a href="https://www.codecademy.com/asaminf0">Codecademy</a>&nbsp;&nbsp;&nbsp;
+			&hearts;<a href="https://www.freecodecamp.org/asaminf0">FreeCodeCamp</a>&nbsp;&nbsp;&nbsp;
+			&hearts;<a href="https://jsfiddle.net/user/asaminf0">JSFiddle</a>&nbsp;&nbsp;&nbsp;
+			&hearts;<a href="https://profile.edx.org/u/asaminf0">edx</a>&nbsp;&nbsp;&nbsp;
+			&hearts;<a href="https://www.linkedin.com/in/atefeh-saminfar-2434001a0">LinkedIn</a>&nbsp;&hearts;
+		</nav>
+<br/>
+   		<a style="text-decoration: none;" href="http://validator.w3.org/check?uri=referer">
+		<img style = "border:0; width:88px; height:31px" src="images/htmlbutton.png" alt="HTML5 Validation Button" /> </a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style = "border:0; width:88px; height:31px" src="images/cssbutton.gif" alt="css Validation Button" /> </a>
+</footer>
+</body>
+</html>
