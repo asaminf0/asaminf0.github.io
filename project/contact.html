@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="form-html" lang="en"> 
+<head>
+	<!--  
+	Author: Atefeh
+	Date:4/1/2020
+	-->
+	<title>Contact - Atefeh</title>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1" name="viewport"> 
+	<meta name="keywords" content="atefeh profile" />
+	<link href="styles/default.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+	<script>
+		function validateForm()
+		{
+			var fieldName = document.forms["form"]["myname"].value;
+			var fieldPhone = document.forms["form"]["myphone"].value;
+			var fieldEmail = document.forms["form"]["myemail"].value;
+			var fieldComments = document.forms["form"]["mycomments"].value;
+			document.write(fieldName);
+			document.write(fieldPhone);
+			document.write(fieldEmail);
+			document.write(fieldComments);
+		}
+	</script>
+</head>
+<body >
+	<header>
+		<script src="java/muos-bareshi-parts001.js?us=2126&id=229&bic=3&nc=0&im1=b1.gif&im2=b2.gif&im3=b3.gif&c6=4&c7=3&c8=1&c12=1&c13=2"></script>
+		<a href="http://students.cpcc.edu/~asaminf0/web110/project/index.html" target="_self">
+			<img class="logoimg" src="images/log3.png" alt="logo">
+		</a>
+		<nav>
+			<div class="btn-top">
+				<a href="http://students.cpcc.edu/~asaminf0/web110/project/index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="http://students.cpcc.edu/~asaminf0/web110/project/gallery.html">GALLERY</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="http://students.cpcc.edu/~asaminf0/web110/project/fantastic.html">SURREAL</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="http://students.cpcc.edu/~asaminf0/web110/project/tuturial.html">TUTORIAL</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="http://students.cpcc.edu/~asaminf0/web110/project/contact.html">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="http://students.cpcc.edu/~asaminf0/web110/project/aboutus.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+		</nav>
+		<div class="container">
+			<img  src="images/contact.jpg" alt="toppic" class="image" >
+		</div>	
+	</header>
+	<main class="form-body">
+		<br><br>
+		<div class="container">
+		  <div class="frame">
+			  <form class="form-signin" name="form" action="#" method="post" onsubmit="return validateForm();">
+					  <h4 class="form-h4"> Contact Us </h4> 
+					  <label for="myname">*Full name:</label>
+					  <input class="form-styling" type="text" name="myname" id="myname" 
+							 required="required" placeholder="your first and last name"/>
+					  <label for="myphone">*Phone number:</label>
+					  <input class="form-styling" type="tel" name="myphone" id="myphone" 
+							 required="required" placeholder="your phone number"/>
+					  <label for="myemail">*Email:</label>
+					  <input class="form-styling" type="email" name="myemail" id="myemail" 
+							 required="required" placeholder="you@yourdomain.com"/>
+					  <label for="mycomments">Comments:</label>
+					  <textarea name="mycomments" id="mycomments" rows="2" cols="20"> Enter text here...</textarea>
+					  <div class="btn-animate">
+							<input class="btn-signin" type="submit" value="Submit" />
+					  </div>
+			  </form>
+		</div>
+		</div>
+		<br><br>
+		<table class="home-page-rb-2">
+			<tr>
+				<td>
+					<br><br>
+						<a  class="btn-bottom" href="http://students.cpcc.edu/~asaminf0/web110/project/index.html">HOME</a>&nbsp;&nbsp;
+						<a  class="btn-bottom" href="http://students.cpcc.edu/~asaminf0/web110/project/gallery.html">GALLERY</a>&nbsp;&nbsp;
+						<a  class="btn-bottom" href="http://students.cpcc.edu/~asaminf0/web110/project/fantastic.html">SURREAL</a>&nbsp;&nbsp;
+						<a  class="btn-bottom" href="http://students.cpcc.edu/~asaminf0/web110/project/tuturial.html">TUTORIAL</a>&nbsp;&nbsp;
+						<a  class="btn-bottom" href="http://students.cpcc.edu/~asaminf0/web110/project/contact.html">CONTACT</a>&nbsp;&nbsp;&nbsp;
+						<a  class="btn-bottom" href="http://students.cpcc.edu/~asaminf0/web110/project/aboutus.html">ABOUT</a>&nbsp;&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<br>
+					<h3>asaminf0@email.cpcc.edu</h3>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="mailto:asaminf0@email.cpcc.edu"><img src="images/mai1.png" alt="toppic"></a>
+					<a href="https://www.instagram.com/atefeh.photography"><img src="images/ins1.png" alt="toppic"></a>
+					<a href="https://www.facebook.com/atefeh.saminfar.98"><img src="images/face1.png" alt="toppic"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h4>Designed by Atefeh Saminfar. All rights reserved. &copy; 2020</h4>
+				</td>
+			</tr>
+		</table>
+	</main>
+	<footer>
+		<br><br>
+		<a style="text-decoration: none;" href="http://validator.w3.org/check?uri=referer">
+		<img style = "border:0; width:88px; height:31px" src="images/htmlbutton.png" alt="HTML5 Validation Button" /> </a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style = "border:0; width:88px; height:31px" src="images/cssbutton.gif" alt="css Validation Button" /> </a>
+	</footer>
+</body>
+</html>
